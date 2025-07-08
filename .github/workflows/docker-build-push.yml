@@ -5,8 +5,8 @@ on:
   push:
     branches: [main]
     paths:
-      - '/docker/app1/**'
-      - '/docker/app2/**'
+      - 'app1/**'
+      - 'app2/**'
       - '.github/workflows/docker-build-push.yml'
 
 env:
@@ -39,6 +39,6 @@ jobs:
 
       - name: Build & Push app2
         run: |
-          docker build -t $ECR_REGISTRY/app2:latest ./app2
+          docker build -t $ECR_REGISTRY/app2:latest ../../docker/app2
           docker push $ECR_REGISTRY/app2:latest
 
