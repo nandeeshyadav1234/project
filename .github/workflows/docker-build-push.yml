@@ -5,8 +5,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'app1/**'
-      - 'app2/**'
+      - '../../docker/app1/**'
+      - '../../docker/app2/**'
       - '.github/workflows/docker-build-push.yml'
 
 env:
