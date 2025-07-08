@@ -9,7 +9,8 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  CLUSTER_NAME: eks-cluster
+  CLUSTER_NAME: intel-io-test-cluster
+
 
 jobs:
   deploy:
