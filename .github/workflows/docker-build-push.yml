@@ -34,11 +34,11 @@ jobs:
 
       - name: Build & Push app1
         run: |
-          docker build -t $ECR_REGISTRY/app1:latest aa
+          docker build -t $ECR_REGISTRY/app1:latest .app1
           docker push $ECR_REGISTRY/app1:latest
 
       - name: Build & Push app2
         run: |
-          docker build -t $ECR_REGISTRY/app2:latest ../../docker/app2
+          docker build -t $ECR_REGISTRY/app2:latest .app2
           docker push $ECR_REGISTRY/app2:latest
 
