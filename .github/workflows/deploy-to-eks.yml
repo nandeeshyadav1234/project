@@ -22,8 +22,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: AKIAU66SQMOYSMJ4EUWF
+          aws-secret-access-key: 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
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Setup kubectl
