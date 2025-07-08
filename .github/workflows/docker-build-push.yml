@@ -34,7 +34,7 @@ jobs:
 
       - name: Build & Push app1
         run: |
-          docker build -t $ECR_REGISTRY/app1:latest ../../docker/app1
+          docker build -t $ECR_REGISTRY/app1:latest aa
           docker push $ECR_REGISTRY/app1:latest
 
       - name: Build & Push app2
